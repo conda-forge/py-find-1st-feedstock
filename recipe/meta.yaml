@@ -1,5 +1,5 @@
 {% set name = "py-find-1st" %}
-{% set version = "1.1.6" %}
+{% set version = "1.1.7" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/py_find_1st-{{ version }}.tar.gz
-  sha256: 8a7bcbc6a4144a58cfc0e5f4e2affd983e686cef54b0e81e29c0be15248f5e1f
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/py_find_1st-{{ version }}.tar.gz
+  sha256: ab268715aff22e1f93242a548e5a514a6f84b962b0dea68b02d9f472d88bf9d0
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
